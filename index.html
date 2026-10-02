@@ -46,6 +46,17 @@ a{color:inherit;text-decoration:none}
 .brand{font-family:Cinzel,serif;font-weight:700;letter-spacing:3px;color:#ffe19a;font-size:.95rem}
 .nav{display:flex;gap:20px;font-size:.76rem;color:#fff}
 .nav a{padding:7px 2px;transition:.25s}.nav a:hover{color:var(--gold2);transform:translateY(-2px)}
+
+/* Mobile Menu Styling */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--gold2);
+  background: none;
+  border: none;
+}
+
 .hero-content{position:relative;z-index:2;max-width:1050px;padding:120px 24px 70px}
 .eyebrow{display:inline-flex;align-items:center;gap:12px;color:#ffe19a;font-size:.72rem;letter-spacing:5px;text-transform:uppercase;margin-bottom:20px;text-shadow:0 2px 12px #000}
 .eyebrow:before,.eyebrow:after{content:"";width:48px;height:1px;background:#f1ca69}
@@ -151,7 +162,29 @@ footer{padding:60px 20px 35px;text-align:center;background:#020805;border-top:1p
 footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{font-weight:600;color:#fff;margin:7px 0}footer p{color:#9aa79e;font-size:.76rem;line-height:1.8}.copyright{margin-top:25px;font-size:.62rem!important;color:#626c65!important}
 
 @media(max-width:950px){
-  .nav{display:none}.topbar{justify-content:center}.grid-2{grid-template-columns:1fr}.video-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr}
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(2, 12, 7, 0.95);
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 224, 154, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  .nav.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .topbar {
+    justify-content: space-between;
+  }
+  .grid-2{grid-template-columns:1fr}.video-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr}
   .hero{background-attachment:scroll}.section,.poetry,.media,.gallery{background-attachment:scroll}
 }
 @media(max-width:600px){
@@ -169,14 +202,15 @@ footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{f
 <section class="hero" id="home">
     <div class="topbar">
         <div class="brand">JAJJA OOR • COMMUNITY</div>
-        <nav class="nav">
-            <a href="#home">Home</a>
-            <a href="#culture">Culture & Life</a>
-            <a href="#people">Main People</a>
-            <a href="#buildings">Buildings</a>
-            <a href="#games">Games</a>
-            <a href="#showcase">Village Showcase</a>
-            <a href="#writer-profile">Writer & IT Profile</a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="nav" id="mobileNav">
+            <a href="#home" onclick="toggleMenu()">Home</a>
+            <a href="#culture" onclick="toggleMenu()">Culture & Life</a>
+            <a href="#people" onclick="toggleMenu()">Main People</a>
+            <a href="#buildings" onclick="toggleMenu()">Buildings</a>
+            <a href="#games" onclick="toggleMenu()">Games</a>
+            <a href="#showcase" onclick="toggleMenu()">Village Showcase</a>
+            <a href="#writer-profile" onclick="toggleMenu()">Writer & IT Profile</a>
         </nav>
     </div>
 
@@ -356,25 +390,26 @@ footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{f
 
 <!-- Tab Switching Script -->
 <script>
-function switchTab(tabName) {
-    // Hide all tab contents
+function switchTab(tabName, btn) {
     document.getElementById('photos-tab').classList.remove('active');
     document.getElementById('video-tab').classList.remove('active');
     
-    // Remove active class from all buttons
     var buttons = document.getElementsByClassName('tab-btn');
     for (var i = 0; i < buttons.length; i++) {
         buttons[i].classList.remove('active');
     }
     
-    // Show selected tab and activate button
     if (tabName === 'photos') {
         document.getElementById('photos-tab').classList.add('active');
-        event.currentTarget.classList.add('active');
     } else if (tabName === 'video') {
         document.getElementById('video-tab').classList.add('active');
-        event.currentTarget.classList.add('active');
     }
+    btn.classList.add('active');
+}
+
+function toggleMenu() {
+    var nav = document.getElementById('mobileNav');
+    nav.classList.toggle('active');
 }
 </script>
 
