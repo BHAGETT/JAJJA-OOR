@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ur" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jajja Oor | Village Heritage & Community Portal</title>
+<title>ججّہ عور | گاؤں کی ثقافت اور کمیونٹی پورٹل</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -16,7 +15,7 @@
   --line:rgba(255,224,154,.30);
 }
 *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
-body{font-family:Poppins,sans-serif;color:#fff;background:#06110b;overflow-x:hidden}
+body{font-family:"Noto Nastaliq Urdu",Poppins,sans-serif;color:#fff;background:#06110b;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 
 /* CINEMATIC HERO */
@@ -43,9 +42,26 @@ a{color:inherit;text-decoration:none}
   background:linear-gradient(to bottom,rgba(2,12,7,.72),transparent);
   border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(5px)
 }
-.brand{font-family:Cinzel,serif;font-weight:700;letter-spacing:3px;color:#ffe19a;font-size:.95rem}
-.nav{display:flex;gap:20px;font-size:.76rem;color:#fff}
+.brand{font-family:"Noto Nastaliq Urdu",Cinzel,serif;font-weight:700;letter-spacing:1px;color:#ffe19a;font-size:.95rem}
+.nav{display:flex;gap:15px;font-size:.8rem;color:#fff;align-items:center}
 .nav a{padding:7px 2px;transition:.25s}.nav a:hover{color:var(--gold2);transform:translateY(-2px)}
+
+/* Language Switcher Button Styling */
+.lang-btn {
+  background: linear-gradient(135deg,#c99535,#ffe39a);
+  color: #09150e;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: .3s;
+}
+.lang-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(215,173,85,0.4);
+}
 
 /* Mobile Menu Styling */
 .menu-toggle {
@@ -58,21 +74,21 @@ a{color:inherit;text-decoration:none}
 }
 
 .hero-content{position:relative;z-index:2;max-width:1050px;padding:120px 24px 70px}
-.eyebrow{display:inline-flex;align-items:center;gap:12px;color:#ffe19a;font-size:.72rem;letter-spacing:5px;text-transform:uppercase;margin-bottom:20px;text-shadow:0 2px 12px #000}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;color:#ffe19a;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;text-shadow:0 2px 12px #000}
 .eyebrow:before,.eyebrow:after{content:"";width:48px;height:1px;background:#f1ca69}
 .hero h1{
-  font-family:Cinzel,serif;font-size:clamp(4rem,10vw,9rem);line-height:.88;
-  letter-spacing:4px;margin-bottom:18px;color:#fff;
+  font-family:"Noto Nastaliq Urdu",Cinzel,serif;font-size:clamp(3rem,8vw,7rem);line-height:1.2;
+  margin-bottom:18px;color:#fff;
   text-shadow:0 7px 35px rgba(0,0,0,.75),0 0 45px rgba(255,210,110,.18)
 }
-.hero h2{font-family:"Noto Nastaliq Urdu",serif;font-size:clamp(1.4rem,3vw,2.3rem);color:#fff0c7;font-weight:400;direction:rtl;margin-bottom:18px;text-shadow:0 3px 15px #000}
-.hero p{max-width:760px;margin:auto;color:#f1f3ec;line-height:1.8;font-size:.98rem;text-shadow:0 2px 12px #000}
+.hero h2{font-family:"Noto Nastaliq Urdu",serif;font-size:clamp(1.4rem,3vw,2.3rem);color:#fff0c7;font-weight:400;margin-bottom:18px;text-shadow:0 3px 15px #000}
+.hero p{max-width:760px;margin:auto;color:#f1f3ec;line-height:2;font-size:1rem;text-shadow:0 2px 12px #000}
 .hero-actions{margin-top:30px;display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
-.btn{padding:13px 25px;border-radius:40px;font-size:.78rem;letter-spacing:1.2px;border:1px solid rgba(255,224,154,.7);transition:.3s;backdrop-filter:blur(10px)}
+.btn{padding:13px 25px;border-radius:40px;font-size:.85rem;letter-spacing:1px;border:1px solid rgba(255,224,154,.7);transition:.3s;backdrop-filter:blur(10px)}
 .btn.primary{background:linear-gradient(135deg,#c99535,#ffe39a);color:#09150e;font-weight:700}
 .btn.secondary{background:rgba(4,18,11,.42);color:#fff}
 .btn:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(0,0,0,.45)}
-.scroll{position:absolute;z-index:4;bottom:22px;left:50%;transform:translateX(-50%);color:#fff;font-size:.62rem;letter-spacing:3px;text-transform:uppercase}
+.scroll{position:absolute;z-index:4;bottom:22px;left:50%;transform:translateX(-50%);color:#fff;font-size:.65rem;letter-spacing:2px;text-transform:uppercase}
 .scroll span{display:block;width:1px;height:35px;background:linear-gradient(#ffe09a,transparent);margin:8px auto 0}
 
 /* NATURAL SECTION SYSTEM */
@@ -82,43 +98,28 @@ a{color:inherit;text-decoration:none}
     linear-gradient(180deg,rgba(4,22,13,.88),rgba(8,43,27,.93)),
     url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2200&q=85") center/cover fixed;
 }
-.section:nth-of-type(3){
-  background:
-    linear-gradient(180deg,rgba(4,22,13,.84),rgba(10,53,34,.94)),
-    url("https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=2200&q=85") center/cover fixed;
-}
-.section:nth-of-type(4){
-  background:
-    linear-gradient(180deg,rgba(4,19,12,.85),rgba(8,42,28,.94)),
-    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2200&q=85") center/cover fixed;
-}
-.section:nth-of-type(5){
-  background:
-    linear-gradient(180deg,rgba(4,19,12,.84),rgba(9,49,31,.94)),
-    url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2200&q=85") center/cover fixed;
-}
 .section:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(255,216,125,.10),transparent 28%);pointer-events:none}
 .section>*{position:relative;z-index:1}
 .section-head{text-align:center;max-width:820px;margin:0 auto 55px}
-.kicker{color:#ffe09a;font-size:.68rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:11px;text-shadow:0 2px 10px #000}
-.section-head h2{font-family:Cinzel,serif;font-size:clamp(2rem,4vw,3.5rem);color:#fff5dc;text-shadow:0 4px 20px #000}
-.section-head p{color:#e0e7df;line-height:1.8;margin-top:13px;text-shadow:0 2px 10px #000}
+.kicker{color:#ffe09a;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:11px;text-shadow:0 2px 10px #000}
+.section-head h2{font-family:"Noto Nastaliq Urdu",Cinzel,serif;font-size:clamp(1.8rem,3.5vw,3rem);color:#fff5dc;text-shadow:0 4px 20px #000}
+.section-head p{color:#e0e7df;line-height:2;margin-top:13px;text-shadow:0 2px 10px #000}
 .grid-2{max-width:1150px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:28px}
 .lux-card{
   position:relative;padding:38px;border-radius:26px;
   background:linear-gradient(145deg,rgba(8,34,22,.70),rgba(7,24,16,.48));
   border:1px solid rgba(255,224,154,.28);box-shadow:0 25px 70px rgba(0,0,0,.38),inset 0 1px rgba(255,255,255,.12);
-  backdrop-filter:blur(12px);transition:.35s;overflow:hidden
+  backdrop-filter:blur(12px);transition:.35s;overflow:hidden;text-align:right
 }
 .lux-card:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(255,255,255,.08),transparent 35%);pointer-events:none}
 .lux-card:hover{transform:translateY(-7px);border-color:rgba(255,224,154,.65);box-shadow:0 30px 80px rgba(0,0,0,.5)}
-.lux-card h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.3rem;margin-bottom:16px}
-.lux-card p{color:#e1e8e2;line-height:1.85;font-size:.9rem;margin-bottom:13px}
-.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}.tag{font-size:.68rem;color:#ffe4a2;padding:7px 10px;border:1px solid rgba(255,224,154,.28);border-radius:20px;background:rgba(255,224,154,.07)}
+.lux-card h3{font-family:"Noto Nastaliq Urdu",Cinzel,serif;color:#ffe09a;font-size:1.3rem;margin-bottom:16px}
+.lux-card p{color:#e1e8e2;line-height:2;font-size:.95rem;margin-bottom:13px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px;justify-content:flex-end}.tag{font-size:.7rem;color:#ffe4a2;padding:7px 10px;border:1px solid rgba(255,224,154,.28);border-radius:20px;background:rgba(255,224,154,.07)}
 
 /* SHOWCASE */
 .showcase-tabs{display:flex;justify-content:center;gap:15px;margin-bottom:40px;flex-wrap:wrap}
-.tab-btn{background:rgba(4,25,15,.55);border:1px solid rgba(255,224,154,.35);color:#ffe09a;padding:12px 28px;border-radius:30px;cursor:pointer;font-family:Poppins;font-size:.85rem;font-weight:600;transition:.3s;backdrop-filter:blur(10px)}
+.tab-btn{background:rgba(4,25,15,.55);border:1px solid rgba(255,224,154,.35);color:#ffe09a;padding:12px 28px;border-radius:30px;cursor:pointer;font-family:"Noto Nastaliq Urdu",Poppins;font-size:.9rem;font-weight:600;transition:.3s;backdrop-filter:blur(10px)}
 .tab-btn.active,.tab-btn:hover{background:linear-gradient(135deg,#c99a3c,#f0cf78);color:#07130f;border-color:transparent;box-shadow:0 8px 25px rgba(214,168,79,.3)}
 .tab-content{display:none}.tab-content.active{display:block}
 
@@ -131,7 +132,7 @@ a{color:inherit;text-decoration:none}
 }
 .ornament{display:flex;align-items:center;gap:15px;justify-content:center;margin:0 auto 24px}.ornament i{display:block;width:70px;height:1px;background:linear-gradient(90deg,transparent,#ffe09a)}.ornament i:last-child{background:linear-gradient(90deg,#ffe09a,transparent)}.ornament b{color:#ffe09a}
 .poetry-box{max-width:900px;margin:auto;padding:52px 35px;border:1px solid rgba(255,224,154,.42);border-radius:28px;background:rgba(4,25,15,.48);backdrop-filter:blur(14px);box-shadow:0 30px 90px rgba(0,0,0,.58)}
-.poetry-box p{direction:rtl;font-family:"Noto Nastaliq Urdu",serif;color:#ffe39a;font-size:clamp(1.25rem,3vw,1.85rem);line-height:2.5}.poetry-box small{display:block;color:#c7d0c8;margin-top:20px;font-size:.68rem;letter-spacing:2px}
+.poetry-box p{direction:rtl;font-family:"Noto Nastaliq Urdu",serif;color:#ffe39a;font-size:clamp(1.25rem,3vw,1.85rem);line-height:2.5}.poetry-box small{display:block;color:#c7d0c8;margin-top:20px;font-size:.7rem;letter-spacing:2px}
 
 /* VIDEOS */
 .media{
@@ -142,7 +143,7 @@ a{color:inherit;text-decoration:none}
 }
 .video-grid{max-width:1150px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px}
 .video-wrap{padding:9px;border-radius:28px;background:linear-gradient(135deg,rgba(255,224,154,.9),rgba(255,224,154,.10),rgba(255,224,154,.7));box-shadow:0 20px 60px rgba(0,0,0,.55)}
-.video-inner{border-radius:20px;overflow:hidden;background:#000}.video-inner video{width:100%;height:auto;display:block}.video-title{text-align:center;color:#ffe09a;font-family:Cinzel,serif;font-size:.95rem;margin-top:12px}
+.video-inner{border-radius:20px;overflow:hidden;background:#000}.video-inner video{width:100%;height:auto;display:block}.video-title{text-align:center;color:#ffe09a;font-family:"Noto Nastaliq Urdu",Cinzel,serif;font-size:1rem;margin-top:12px}
 
 /* GALLERY */
 .gallery{
@@ -152,14 +153,14 @@ a{color:inherit;text-decoration:none}
     url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=85") center/cover fixed;
 }
 .gallery-grid{max-width:1150px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.gallery-card{border-radius:20px;border:1px solid rgba(255,224,154,.20);background:rgba(8,28,18,.62);overflow:hidden;transition:.35s;display:flex;flex-direction:column;backdrop-filter:blur(8px)}
+.gallery-card{border-radius:20px;border:1px solid rgba(255,224,154,.20);background:rgba(8,28,18,.62);overflow:hidden;transition:.35s;display:flex;flex-direction:column;backdrop-filter:blur(8px);text-align:right}
 .gallery-card:hover{transform:translateY(-7px) scale(1.01);border-color:rgba(255,224,154,.62);box-shadow:0 25px 60px rgba(0,0,0,.45)}
 .gallery-img{width:100%;height:220px;object-fit:contain;background:#05140c;display:block;transition:.5s}.gallery-card:hover .gallery-img{transform:scale(1.05)}
-.gallery-info{padding:20px;flex-grow:1}.gallery-card h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1rem;margin-bottom:7px}.gallery-card p{color:#c2cdc4;font-size:.75rem;line-height:1.6}
+.gallery-info{padding:20px;flex-grow:1}.gallery-card h3{font-family:"Noto Nastaliq Urdu",Cinzel,serif;color:#ffe09a;font-size:1.05rem;margin-bottom:7px}.gallery-card p{color:#c2cdc4;font-size:.8rem;line-height:1.8}
 
 /* FOOTER */
 footer{padding:60px 20px 35px;text-align:center;background:#020805;border-top:1px solid rgba(255,224,154,.18)}
-footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{font-weight:600;color:#fff;margin:7px 0}footer p{color:#9aa79e;font-size:.76rem;line-height:1.8}.copyright{margin-top:25px;font-size:.62rem!important;color:#626c65!important}
+footer h3{font-family:"Noto Nastaliq Urdu",Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{font-weight:600;color:#fff;margin:7px 0}footer p{color:#9aa79e;font-size:.8rem;line-height:1.8}.copyright{margin-top:25px;font-size:.65rem!important;color:#626c65!important}
 
 @media(max-width:950px){
   .nav {
@@ -187,69 +188,58 @@ footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{f
   .grid-2{grid-template-columns:1fr}.video-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr}
   .hero{background-attachment:scroll}.section,.poetry,.media,.gallery{background-attachment:scroll}
 }
-@media(max-width:600px){
-  .hero-content{padding:105px 18px 65px}.hero h1{font-size:clamp(3.4rem,18vw,5rem)}.hero h2{font-size:1.25rem}
-  .section{padding:80px 5%}.lux-card{padding:28px 24px}.poetry-box{padding:38px 20px}
-  .showcase-tabs{gap:8px}.tab-btn{padding:10px 16px;font-size:.74rem}
-}
 </style>
-
-<!-- Vercel Web Analytics -->
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-
 </head>
-
 <body>
 
 <!-- TOP NAVIGATION -->
 <section class="hero" id="home">
     <div class="topbar">
-        <div class="brand">JAJJA OOR �� COMMUNITY</div>
+        <div class="brand" data-en="JAJJA OOR • COMMUNITY" data-ur="ججّہ عور • کمیونٹی">ججّہ عور • کمیونٹی</div>
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <nav class="nav" id="mobileNav">
-            <a href="#home" onclick="toggleMenu()">Home</a>
-            <a href="#culture" onclick="toggleMenu()">Culture & Life</a>
-            <a href="#people" onclick="toggleMenu()">Main People</a>
-            <a href="#buildings" onclick="toggleMenu()">Buildings</a>
-            <a href="#games" onclick="toggleMenu()">Games</a>
-            <a href="#showcase" onclick="toggleMenu()">Village Showcase</a>
-            <a href="#writer-profile" onclick="toggleMenu()">Writer & IT Profile</a>
+            <a href="#home" onclick="toggleMenu()" data-en="Home" data-ur="ہوم">ہوم</a>
+            <a href="#culture" onclick="toggleMenu()" data-en="Culture & Life" data-ur="کلچر اور زندگی">کلچر اور زندگی</a>
+            <a href="#people" onclick="toggleMenu()" data-en="Main People" data-ur="اہم لوگ">اہم لوگ</a>
+            <a href="#tiktoker" onclick="toggleMenu()" data-en="Village Tiktoker" data-ur="مشہور ٹک ٹاکرز">مشہور ٹک ٹاکرز</a>
+            <a href="#buildings" onclick="toggleMenu()" data-en="Buildings" data-ur="عمارتیں">عمارتیں</a>
+            <a href="#games" onclick="toggleMenu()" data-en="Games" data-ur="کھیل">کھیل</a>
+            <a href="#showcase" onclick="toggleMenu()" data-en="Village Showcase" data-ur="شوکیس">شوکیس</a>
+            <a href="#writer-profile" onclick="toggleMenu()" data-en="Writer & IT Profile" data-ur="مصنف پروفাইল">مصنف پروفাইল</a>
+            <button class="lang-btn" onclick="toggleLanguage()">English / اردو</button>
         </nav>
     </div>
 
     <div class="hero-content">
-        <div class="eyebrow">Official Village Heritage Portal</div>
-        <h1>Jajja Oor</h1>
-        <h2>مٹی کی خوشبو، یادوں کا سفر</h2>
-        <p>
-            Tehsil Phalia, District Mandi Bahauddin — exploring the soul, culture, traditions, local games, and heart of Jajja Oor.
+        <div class="eyebrow" data-en="Official Village Heritage Portal" data-ur="سرکاری گاؤں کا ثقافتی پورٹل">سرکاری گاؤں کا ثقافتی پورٹل</div>
+        <h1 data-en="Jajja Oor" data-ur="ججّہ عور">ججّہ عور</h1>
+        <h2 data-en="Fragrance of soil, journey of memories" data-ur="مٹی کی خوشبو، یادوں کا سفر">مٹی کی خوشبو، یادوں کا سفر</h2>
+        <p data-en="Tehsil Phalia, District Mandi Bahauddin — exploring the soul, culture, traditions, local games, and heart of Jajja Oor." data-ur="تحصیل پھالیہ، ضلع منڈی بہاؤالدین — ججّہ عور کی روح، ثقافت، روایات اور گاؤں کا دل۔">
+            تحصیل پھالیہ، ضلع منڈی بہاؤالدین — ججّہ عور کی روح، ثقافت، روایات اور گاؤں کا دل۔
         </p>
         <div class="hero-actions">
-            <a class="btn primary" href="#culture">EXPLORE VILLAGE</a>
-            <a class="btn secondary" href="#showcase">VILLAGE SHOWCASE</a>
+            <a class="btn primary" href="#culture" data-en="EXPLORE VILLAGE" data-ur="گاؤں کی سیر کریں">گاؤں کی سیر کریں</a>
+            <a class="btn secondary" href="#showcase" data-en="VILLAGE SHOWCASE" data-ur="گاؤں کی تصاویر">گاؤں کی تصاویر</a>
         </div>
     </div>
-    <div class="scroll">Scroll to discover<span></span></div>
+    <div class="scroll"><span data-en="Scroll to discover" data-ur="مزید دیکھنے کے لیے نیچے آئیں">مزید دیکھنے کے لیے نیچے آئیں</span><span></span></div>
 </section>
 
 <!-- VILLAGE CULTURE & HERITAGE -->
 <section class="section" id="culture">
     <div class="section-head">
-        <div class="kicker">Traditions & Atmosphere</div>
-        <h2>Village Culture & Daily Life</h2>
-        <p>The authentic dehati mahol, traditional gatherings, seasonal farming, and rich heritage of Jajja Oor.</p>
+        <div class="kicker" data-en="Traditions & Atmosphere" data-ur="روایات اور ماحول">روایات اور ماحول</div>
+        <h2 data-en="Village Culture & Daily Life" data-ur="گاؤں کا کلچر اور روزمرہ زندگی">گاؤں کا کلچر اور روزمرہ زندگی</h2>
+        <p data-en="The authentic dehati mahol, traditional gatherings, seasonal farming, and rich heritage of Jajja Oor." data-ur="ججّہ عور کا اصلی دیہاتی ماحول، روایتی بیٹھکیں، فصلیں اور شاندار ثقافت۔">ججّہ عور کا اصلی دیہاتی ماحول، روایتی بیٹھکیں، فصلیں اور شاندار ثقافت۔</p>
     </div>
     <div class="grid-2">
         <article class="lux-card">
-            <h3>Dehati Mahol & Traditions</h3>
-            <p>A glimpse into the peaceful rural lifestyle, open green fields, and community harmony that defines the true essence of Punjab.</p>
+            <h3 data-en="Dehati Mahol & Traditions" data-ur="دیہاتی ماحول اور روایات">دیہاتی ماحول اور روایات</h3>
+            <p data-en="A glimpse into the peaceful rural lifestyle, open green fields, and community harmony that defines the true essence of Punjab." data-ur="پرامن دیہاتی طرز زندگی، سرسبز کھیتوں اور باہمی محبت کا ایک حسین منظر۔">پرامن دیہاتی طرز زندگی، سرسبز کھیتوں اور باہمی محبت کا ایک حسین منظر۔</p>
         </article>
         <article class="lux-card">
-            <h3>Local Cuisine & Gatherings</h3>
-            <p>Traditional cooking methods, community feasts, and local hospitality passed down through generations.</p>
+            <h3 data-en="Local Cuisine & Gatherings" data-ur="مقامی کھانے اور بیٹھکیں">مقامی کھانے اور بیٹھکیں</h3>
+            <p data-en="Traditional cooking methods, community feasts, and local hospitality passed down through generations." data-ur="روایتی کھانے پکانے کے طریقے، اجتماعی دعوتیں اور نسل در نسل چلی آنے والی مہمان نوازی۔">روایتی کھانے پکانے کے طریقے، اجتماعی دعوتیں اور نسل در نسل چلی آنے والی مہمان نوازی۔</p>
         </article>
     </div>
 </section>
@@ -257,18 +247,42 @@ footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{f
 <!-- MAIN PEOPLE OF THE VILLAGE -->
 <section class="section" id="people">
     <div class="section-head">
-        <div class="kicker">Community & Elders</div>
-        <h2>Main People & Residents</h2>
-        <p>Celebrating the hardworking residents, respected elders, and youth who keep the spirit of Jajja Oor alive.</p>
+        <div class="kicker" data-en="Community & Elders" data-ur="برادری اور بزرگ">برادری اور بزرگ</div>
+        <h2 data-en="Main People & Residents" data-ur="اہم شخصیات اور رہائشی">اہم شخصیات اور رہائشی</h2>
+        <p data-en="Celebrating the hardworking residents, respected elders, and youth who keep the spirit of Jajja Oor alive." data-ur="محنتی رہائشیوں، معزز بزرگوں اور نوجوانوں کو خراج تحسین جو ججّہ عور کی شان ہیں۔">محنتی رہائشیوں، معزز بزرگوں اور نوجوانوں کو خراج تحسین جو ججّہ عور کی شان ہیں۔</p>
     </div>
     <div class="grid-2">
         <article class="lux-card">
-            <h3>Village Elders & Leaders</h3>
-            <p>Honored figures and community members who guide local traditions and preserve our rich history.</p>
+            <h3 data-en="Village Elders & Leaders" data-ur="گاؤں کے بزرگ اور قائدین">گاؤں کے بزرگ اور قائدین</h3>
+            <p data-en="Honored figures and community members who guide local traditions and preserve our rich history." data-ur="معزز شخصیات جو مقامی روایات کی رہنمائی کرتی ہیں اور ہماری تاریخ کو سنبھالے ہوئے ہیں۔">معزز شخصیات جو مقامی روایات کی رہنمائی کرتی ہیں اور ہماری تاریخ کو سنبھالے ہوئے ہیں۔</p>
         </article>
         <article class="lux-card">
-            <h3>Youth & Local Residents</h3>
-            <p>The energetic younger generation and families contributing to everyday village life and agricultural roots.</p>
+            <h3 data-en="Youth & Local Residents" data-ur="نوجوان اور مقامی رہائشی">نوجوان اور مقامی رہائشی</h3>
+            <p data-en="The energetic younger generation and families contributing to everyday village life and agricultural roots." data-ur="توانا نوجوان نسل اور خاندان جو گاؤں کی روزمرہ زندگی اور زراعت میں اہم کردار ادا کر رہے ہیں۔">توانا نوجوان نسل اور خاندان جو گاؤں کی روزمرہ زندگی اور زراعت میں اہم کردار ادا کر رہے ہیں۔</p>
+        </article>
+    </div>
+</section>
+
+<!-- FAMOUS TIKTOKERS OF THE VILLAGE SECTION -->
+<section class="section" id="tiktoker">
+    <div class="section-head">
+        <div class="kicker" data-en="Social Media Stars" data-ur="سوشل میڈیا ستارے">سوشل میڈیا ستارے</div>
+        <h2 data-en="Famous Tiktoker of the Village" data-ur="گاؤں کے مشہور ٹک ٹاکرز">گاؤں کے مشہور ٹک ٹاکرز</h2>
+        <p data-en="Highlighting the prominent digital creators and viral content stars representing Jajja Oor on TikTok." data-ur="ججّہ عور کے وہ نمایاں نوجوان جو ٹک ٹاک پر گاؤں کا نام روشن कर रहे ہیں۔">ججّہ عور کے وہ نمایاں نوجوان جو ٹک ٹاک پر گاؤں کا نام روشن کر رہے ہیں۔</p>
+    </div>
+    <div class="grid-2">
+        <article class="lux-card">
+            <h3 data-en="Village TikTok Star Profile" data-ur="ٹک ٹاکر پروفাইল">ٹک ٹاکر پروفাইল</h3>
+            <p data-en="Bringing smiles, showcasing village lifestyle, and entertaining thousands online with creative regional content from Jajja Oor." data-ur="گاؤں کے خوبصورت نظاروں اور دیہاتی ثقافت پر مبنی ویڈیوز سے ہزاروں لوگوں کو محظوظ کرنے والے نمایاں ٹک ٹاکر۔">گاؤں کے خوبصورت نظاروں اور دیہاتی ثقافت پر مبنی ویڈیوز سے ہزاروں لوگوں کو محظوظ کرنے والے نمایاں ٹک ٹاکر۔</p>
+            <div class="tags">
+                <span class="tag" data-en="Viral Videos" data-ur="وائرل ویڈیوز">وائرل ویڈیوز</span>
+                <span class="tag" data-en="Village Content" data-ur="دیہاتی مواد">دیہاتی مواد</span>
+                <span class="tag" data-en="TikTok Star" data-ur="ٹک ٹاک اسٹار">ٹک ٹاک اسٹار</span>
+            </div>
+        </article>
+        <article class="lux-card">
+            <h3 data-en="Digital Impact & Community" data-ur="ڈیجیٹل اثر اور کمیونٹی">ڈیجیٹل اثر اور کمیونٹی</h3>
+            <p data-en="Connecting rural Punjab with the global digital audience through trending videos, humor, and local traditions." data-ur="پنجاب کے دیہات کو اپنی منفرد ویڈیوز اور مزاحیہ انداز سے دنیا بھر کے ناظرین کے ساتھ جوڑنا۔">پنجاب کے دیہات کو اپنی منفرد ویڈیوز اور مزاحیہ انداز سے دنیا بھر کے ناظرین کے ساتھ جوڑنا۔</p>
         </article>
     </div>
 </section>
@@ -276,18 +290,18 @@ footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{f
 <!-- MAIN BUILDINGS & PLACES -->
 <section class="section" id="buildings">
     <div class="section-head">
-        <div class="kicker">Landmarks & Architecture</div>
-        <h2>Main Buildings & Locations</h2>
-        <p>Key structures, neighborhood boundaries, and historical spots within and around Jajja Oor.</p>
+        <div class="kicker" data-en="Landmarks & Architecture" data-ur="تاریخی مقامات اور عمارات">تاریخی مقامات اور عمارات</div>
+        <h2 data-en="Main Buildings & Locations" data-ur="اہم عمارتیں اور مقامات">اہم عمارتیں اور مقامات</h2>
+        <p data-en="Key structures, neighborhood boundaries, and historical spots within and around Jajja Oor." data-ur="ججّہ عور اور اس کے گردونواح کی اہم تعمیرات اور تاریخی جگہیںـ">ججّہ عور اور اس کے گردونواح کی اہم تعمیرات اور تاریخی جگہیںـ</p>
     </div>
     <div class="grid-2">
         <article class="lux-card">
-            <h3>Village Architecture</h3>
-            <p>Traditional homes, local landmarks, and community spaces characterizing the settlement.</p>
+            <h3 data-en="Village Architecture" data-ur="گاؤں کی تعمیرات">گاؤں کی تعمیرات</h3>
+            <p data-en="Traditional homes, local landmarks, and community spaces characterizing the settlement." data-ur="روایتی گھر، مقامی یادگاریں اور کمیونٹی کے اجتماعات کی جگہیںـ">روایتی گھر، مقامی یادگاریں اور کمیونٹی کے اجتماعات کی جگہیںـ</p>
         </article>
         <article class="lux-card">
-            <h3>Surrounding Areas</h3>
-            <p>Boundaries connecting to neighboring regions like Cheetoo, Kot Sher Muhammad, and Pindi Alla.</p>
+            <h3 data-en="Surrounding Areas" data-ur="گردونواح کے علاقے">گردونواح کے علاقے</h3>
+            <p data-en="Boundaries connecting to neighboring regions like Cheetoo, Kot Sher Muhammad, and Pindi Alla." data-ur="چیٹو، کوٹ شیر محمد اور پنڈی اللہ جیسے قریبی علاقوں سے ملنے والی حدود۔">چیٹو، کوٹ شیر محمد اور پنڈی اللہ جیسے قریبی علاقوں سے ملنے والی حدود۔</p>
         </article>
     </div>
 </section>
@@ -295,18 +309,18 @@ footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{f
 <!-- GAMES & SPORTS -->
 <section class="section" id="games">
     <div class="section-head">
-        <div class="kicker">Sports & Recreation</div>
-        <h2>Traditional Games & Activities</h2>
-        <p>The energetic local games and outdoor sports enjoyed by the community across the village grounds.</p>
+        <div class="kicker" data-en="Sports & Recreation" data-ur="کھیل اور تفریح">کھیل اور تفریح</div>
+        <h2 data-en="Traditional Games & Activities" data-ur="روایتی کھیل اور سرگرمیاں">روایتی کھیل اور سرگرمیاں</h2>
+        <p data-en="The energetic local games and outdoor sports enjoyed by the community across the village grounds." data-ur="گاؤں کے کھلے میدانوں میں کھیلے جانے والے روایتی کھیل اور پرجوش سرگرمیاں۔">گاؤں کے کھلے میدانوں میں کھیلے جانے والے روایتی کھیل اور پرجوش سرگرمیاں۔</p>
     </div>
     <div class="grid-2">
         <article class="lux-card">
-            <h3>Local Sports Culture</h3>
-            <p>Traditional outdoor games, physical activities, and recreational gatherings across village fields.</p>
+            <h3 data-en="Local Sports Culture" data-ur="مقامی کھیلوں کا کلچر">مقامی کھیلوں کا کلچر</h3>
+            <p data-en="Traditional outdoor games, physical activities, and recreational gatherings across village fields." data-ur="گاؤں کے میدانوں میں روایتی بیرونی کھیل اور تفریحی اجتماعات۔">گاؤں کے میدانوں میں روایتی بیرونی کھیل اور تفریحی اجتماعات۔</p>
         </article>
         <article class="lux-card">
-            <h3>Community Play & Youth Activities</h3>
-            <p>Engaging youth sports, friendly matches, and communal entertainment events.</p>
+            <h3 data-en="Community Play & Youth Activities" data-ur="نوجوانوں کی کھیل کود">نوجوانوں کی کھیل کود</h3>
+            <p data-en="Engaging youth sports, friendly matches, and communal entertainment events." data-ur="نوجوانوں کے دوستانہ مقابلے اور تفریحی کھیلوں کے ایونٹس۔">نوجوانوں کے دوستانہ مقابلے اور تفریحی کھیلوں کے ایونٹس۔</p>
         </article>
     </div>
 </section>
@@ -314,15 +328,15 @@ footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{f
 <!-- NEW DEDICATED VILLAGE SHOWCASE SECTION (PHOTOS & DRONE VIDEO WITH TABS) -->
 <section class="section" id="showcase">
     <div class="section-head">
-        <div class="kicker">Visual Archive</div>
-        <h2>Village Showcase & Media</h2>
-        <p>Explore authentic moments, local villagers, community gatherings, and aerial drone views of Jajja Oor.</p>
+        <div class="kicker" data-en="Visual Archive" data-ur="تصویری آرکائیو">تصویری آرکائیو</div>
+        <h2 data-en="Village Showcase & Media" data-ur="گاؤں کی گیلری اور میڈیا">گاؤں کی گیلری اور میڈیا</h2>
+        <p data-en="Explore authentic moments, local villagers, community gatherings, and aerial drone views of Jajja Oor." data-ur="ججّہ عور کے خوبصورت مناظر، مقامی افراد اور ڈرون ویڈیوز ملاحظہ کریں۔">ججّہ عور کے خوبصورت مناظر، مقامی افراد اور ڈرون ویڈیوز ملاحظہ کریں۔</p>
     </div>
 
     <!-- Interactive Tabs -->
     <div class="showcase-tabs">
-        <button class="tab-btn active" onclick="switchTab('photos', this)">📸 Village & People Photos</button>
-        <button class="tab-btn" onclick="switchTab('video', this)">🎥 Village Videos</button>
+        <button class="tab-btn active" onclick="switchTab('photos', this)" data-en="📸 Village & People Photos" data-ur="📸 گاؤں اور لوگوں کی تصاویر">📸 گاؤں اور لوگوں کی تصاویر</button>
+        <button class="tab-btn" onclick="switchTab('video', this)" data-en="🎥 Village Videos" data-ur="🎥 گاؤں کی ویڈیوز">🎥 گاؤں کی ویڈیوز</button>
     </div>
 
     <!-- Photos Tab Content -->
@@ -331,78 +345,78 @@ footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{f
             <div class="gallery-card">
                 <img src="WhatsApp Image 2026-10-01 at 7.19.04 PM.jpeg" alt="Village Life" class="gallery-img">
                 <div class="gallery-info">
-                    <h3>Village Atmosphere</h3>
-                    <p>Daily routine and rural environment</p>
+                    <h3 data-en="Village Atmosphere" data-ur="گاؤں کا ماحول">گاؤں کا ماحول</h3>
+                    <p data-en="Daily routine and rural environment" data-ur="روزمرہ روٹین اور دیہی ماحول">روزمرہ روٹین اور دیہی ماحول</p>
                 </div>
             </div>
             <div class="gallery-card">
                 <img src="WhatsApp Image 2026-10-01 at 7.18.51 PM.jpeg" alt="Villagers" class="gallery-img">
                 <div class="gallery-info">
-                    <h3>Youth & Friends</h3>
-                    <p>Local community members together</p>
+                    <h3 data-en="Youth & Friends" data-ur="نوجوان اور دوست">نوجوان اور دوست</h3>
+                    <p data-en="Local community members together" data-ur="مقامی افراد ایک ساتھ">مقامی افراد ایک ساتھ</p>
                 </div>
             </div>
             <div class="gallery-card">
                 <img src="Haris bhagett.jpeg" alt="Haris Bhagett" class="gallery-img">
                 <div class="gallery-info">
                     <h3>Haris Bhagett</h3>
-                    <p>Community Member</p>
+                    <p data-en="Community Member" data-ur="کمیونٹی ممبر">کمیونٹی ممبر</p>
                 </div>
             </div>
             <div class="gallery-card">
                 <img src="Haris.jpeg" alt="Haris" class="gallery-img">
                 <div class="gallery-info">
                     <h3>Haris</h3>
-                    <p>Community Member</p>
+                    <p data-en="Community Member" data-ur="کمیونٹی ممبر">کمیونٹی ممبر</p>
                 </div>
             </div>
             <div class="gallery-card">
                 <img src="Muhammad Haris Bhagett.jpeg" alt="Muhammad Haris Bhagett" class="gallery-img">
                 <div class="gallery-info">
                     <h3>Muhammad Haris Bhagett</h3>
-                    <p>Community Member</p>
+                    <p data-en="Community Member" data-ur="کمیونٹی ممبر">کمیونٹی ممبر</p>
                 </div>
             </div>
             <div class="gallery-card">
                 <img src="Muhammad Abdullah Bhagett.jpeg" alt="Muhammad Abdullah Bhagett" class="gallery-img">
                 <div class="gallery-info">
                     <h3>Muhammad Abdullah Bhagett</h3>
-                    <p>Community Member</p>
+                    <p data-en="Community Member" data-ur="کمیونٹی ممبر">کمیونٹی ممبر</p>
                 </div>
             </div>
             <div class="gallery-card">
                 <img src="WhatsApp Image 2026-10-01 at 7.18.52 PM.jpeg" alt="Local Resident" class="gallery-img">
                 <div class="gallery-info">
-                    <h3>Village Resident</h3>
-                    <p>Proud member of Jajja Oor</p>
+                    <h3 data-en="Village Resident" data-ur="گاؤں کا رہائشی">گاؤں کا رہائشی</h3>
+                    <p data-en="Proud member of Jajja Oor" data-ur="ججّہ عور کا فخر">ججّہ عور کا فخر</p>
                 </div>
             </div>
             <div class="gallery-card">
                 <img src="WhatsApp Image 2026-10-01 at 7.18.55 PM.jpeg" alt="Gathering" class="gallery-img">
                 <div class="gallery-info">
-                    <h3>Community Cooking</h3>
-                    <p>Traditional food preparation setup</p>
+                    <h3 data-en="Community Cooking" data-ur="روایتی کھانا پکانا">روایتی کھانا پکانا</h3>
+                    <p data-en="Traditional food preparation setup" data-ur="روایتی انداز میں کھانے کی تیاری">روایتی انداز میں کھانے کی تیاری</p>
                 </div>
             </div>
             <div class="gallery-card">
                 <img src="WhatsApp Image 2026-10-01 at 7.18.56 PM.jpeg" alt="Feast Preparation" class="gallery-img">
                 <div class="gallery-info">
-                    <h3>Traditional Feasts</h3>
-                    <p>Open-air communal gathering</p>
+                    <h3 data-en="Traditional Feasts" data-ur="روایتی دعوتیں">روایتی دعوتیں</h3>
+                    <p data-en="Open-air communal gathering" data-ur="کھلے آسمان تلے اجتماعی محفل">کھلے آسمان تلے اجتماعی محفل</p>
                 </div>
             </div>
             <div class="gallery-card">
                 <img src="WhatsApp Image 2026-10-01 at 7.18.58 PM.jpeg" alt="Village Elder" class="gallery-img">
                 <div class="gallery-info">
-                    <h3>Respected Elder</h3>
-                    <p>Guiding traditions and values</p>
+                    <h3 data-en="Respected Elder" data-ur="معزز بزرگ">معزز بزرگ</h3>
+                    <p data-en="Guiding traditions and values" data-ur="روایات کی پاسداری کرتے ہوئے">روایات کی پاسداری کرتے ہوئے</p>
                 </div>
             </div>
             <div class="gallery-card">
                 <img src="WhatsApp Image 2026-10-01 at 7.19.03 PM.jpeg" alt="Elders and Youth" class="gallery-img">
                 <div class="gallery-info">
-                    <h3>Generations</h3>
-                    <p>Elders and youth united</p>
+                    <h3 data-en="Generations" data-ur="نسلیں">نسلیں</h3>
+                    <p data-en="Elders and youth united" data-ur="بزرگ اور نوجوان ایک ساتھ">بزرگ اور نوجوان ایک ساتھ</p>
                 </div>
             </div>
         </div>
@@ -417,7 +431,7 @@ footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{f
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-title">Aerial Drone View - Jajja Oor Village Layout & Surroundings</div>
+            <div class="video-title" data-en="Aerial Drone View - Jajja Oor Village Layout & Surroundings" data-ur="ڈرون ویو - ججّہ عور کا فضائی منظر">ڈرون ویو - ججّہ عور کا فضائی منظر</div>
         </div>
 
         <div style="max-width:850px; margin:0 auto;" class="video-wrap">
@@ -427,7 +441,7 @@ footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{f
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-title">Jajja Oor Village Street View - Jajjaoor.mp4</div>
+            <div class="video-title" data-en="Jajja Oor Village Street View - Jajjaoor.mp4" data-ur="ججّہ عور اسٹریٹ ویو">ججّہ عور اسٹریٹ ویو</div>
         </div>
     </div>
 </section>
@@ -455,6 +469,29 @@ function toggleMenu() {
     var nav = document.getElementById('mobileNav');
     nav.classList.toggle('active');
 }
+
+let currentLang = 'ur';
+function toggleLanguage() {
+    currentLang = currentLang === 'ur' ? 'en' : 'ur';
+    const elements = document.querySelectorAll('[data-en]');
+    elements.forEach(el => {
+        const text = el.getAttribute(`data-${currentLang}`);
+        if (text) {
+            if(el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                el.placeholder = text;
+            } else {
+                el.innerHTML = text;
+            }
+        }
+    });
+    if(currentLang === 'ur') {
+        document.body.style.fontFamily = '"Noto Nastaliq Urdu", Poppins, sans-serif';
+        document.documentElement.setAttribute('dir', 'rtl');
+    } else {
+        document.body.style.fontFamily = 'Poppins, sans-serif';
+        document.documentElement.setAttribute('dir', 'ltr');
+    }
+}
 </script>
 
 <!-- POETRY -->
@@ -474,9 +511,9 @@ function toggleMenu() {
 <!-- DEDICATED WRITER & IT CONSULTANT TAB / SECTION -->
 <section class="section" id="writer-profile">
     <div class="section-head">
-        <div class="kicker">Creator & Professional Profile</div>
-        <h2>Writer & IT Consultant Section</h2>
-        <p>Detailed professional background, global IT career, publishing works, and official company links by Faiz Ahmed Bhagett.</p>
+        <div class="kicker" data-en="Creator & Professional Profile" data-ur="کریئیٹر اور پروفیشنل پروفাইল">کریئیٹر اور پروفیشنل پروفাইল</div>
+        <h2 data-en="Writer & IT Consultant Section" data-ur="مصنف اور آئی ٹی کنسلٹنٹ سیکشن">مصنف اور آئی ٹی کنسلٹنٹ سیکشن</h2>
+        <p data-en="Detailed professional background, global IT career, publishing works, and official company links by Faiz Ahmed Bhagett." data-ur="فیض احمد بھگٹ کا تفصیلی پروفیشنل پس منظر، عالمی آئی ٹی کیریئر اور کاروباری لنکس۔">فیض احمد بھگٹ کا تفصیلی پروفیشنل پس منظر، عالمی آئی ٹی کیریئر اور کاروباری لنکس۔</p>
     </div>
     
     <!-- SPECIAL WRITER HIGHLIGHT CARD WITH ATTACHED PHOTO -->
@@ -484,31 +521,31 @@ function toggleMenu() {
         <div style="width:140px; height:140px; border-radius:50%; border:3px solid #ffe09a; overflow:hidden; margin-bottom:20px; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
             <img src="Passport .png" alt="Faiz Ahmed Bhagett" style="width:100%; height:100%; object-fit:cover;">
         </div>
-        <h3 style="font-family:Cinzel,serif; color:#ffe09a; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:12px; text-shadow:0 2px 10px #000; background:linear-gradient(135deg, #ffe39a, #c99535); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">
-            The Pioneer of Modern Technology in Jajja Oor
+        <h3 style="font-family:"Noto Nastaliq Urdu",Cinzel,serif; color:#ffe09a; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:12px; text-shadow:0 2px 10px #000; background:linear-gradient(135deg, #ffe39a, #c99535); -webkit-background-clip:text; -webkit-text-fill-color:transparent;" data-en="The Pioneer of Modern Technology in Jajja Oor" data-ur="ججّہ عور کی تاریخ میں جدید ٹیکنالوجی کے بانی">
+            ججّہ عور کی تاریخ میں جدید ٹیکنالوجی کے بانی
         </h3>
-        <p style="color:#f1f3ec; font-size:1.05rem; line-height:1.9; max-width:750px; margin-bottom:15px; text-shadow:0 1px 8px #000;">
-            Faiz Ahmed Bhagett holds the historic distinction of being <strong>the first IT-Engineer in Jajja Oor's history for the last 60 years</strong>. Bridging rural roots with global technological excellence, his groundbreaking journey spans decades of dedication, innovation, and leadership across international borders.
+        <p style="color:#f1f3ec; font-size:1.05rem; line-height:2; max-width:750px; margin-bottom:15px; text-shadow:0 1px 8px #000;" data-en="Faiz Ahmed Bhagett holds the historic distinction of being <strong>the first IT-Engineer in Jajja Oor's history for the last 60 years</strong>. Bridging rural roots with global technological excellence, his groundbreaking journey spans decades of dedication, innovation, and leadership across international borders." data-ur="فیض احمد بھگٹ کو یہ تاریخی اعزاز حاصل ہے کہ وہ پچھلے 60 سالوں میں **ججّہ عور کی تاریخ کے پہلے آئی ٹی انجینئر** ہیں۔ اپنے گاؤں کی مٹی سے جڑے رہ کر بین الاقوامی سطح پر ٹیکنالوجی کے میدان میں نمایاں خدمات انجام دے رہے ہیں۔">
+            فیض احمد بھگٹ کو یہ تاریخی اعزاز حاصل ہے کہ وہ پچھلے 60 سالوں میں **ججّہ عور کی تاریخ کے پہلے آئی ٹی انجینئر** ہیں۔ اپنے گاؤں کی مٹی سے جڑے رہ کر بین الاقوامی سطح پر ٹیکنالوجی کے میدان میں نمایاں خدمات انجام دے رہے ہیں۔
         </p>
-        <div style="display:inline-block; padding:8px 20px; background:rgba(255,224,154,0.15); border:1px solid rgba(255,224,154,0.4); border-radius:30px; color:#ffe09a; font-size:0.8rem; letter-spacing:1.5px; text-transform:uppercase; font-weight:600;">
-            ✦ Writer, Author & Senior IT Infrastructure Consultant ✦
+        <div style="display:inline-block; padding:8px 20px; background:rgba(255,224,154,0.15); border:1px solid rgba(255,224,154,0.4); border-radius:30px; color:#ffe09a; font-size:0.8rem; letter-spacing:1px; text-transform:uppercase; font-weight:600;" data-en="✦ Writer, Author & Senior IT Infrastructure Consultant ✦" data-ur="✦ مصنف، مصنف اور سینئر آئی ٹی انفراسٹرکچر کنسلٹنٹ ✦">
+            ✦ مصنف، مصنف اور سینئر آئی ٹی انفراسٹرکچر کنسلٹنٹ ✦
         </div>
     </div>
 
     <div class="grid-2" style="margin-bottom:50px;">
         <article class="lux-card">
-            <h3>Faiz Ahmed Bhagett — Background & Career</h3>
-            <p><strong>Roots:</strong> Son of Mian Muhammad Siddique (Late Imam Mosque, Main Mosque Village Jajja-Oor).</p>
-            <p><strong>Education:</strong> ICS (1997) from Govt. Model Degree College for Boys, Lahore; BCS (1998–2000) from Premier College of Information Technology, Lahore.</p>
-            <p><strong>Professional Certifications:</strong> MCP (Microsoft Certified Professional), MCSA, Microsoft Certified System Administrator, MCSE (Microsoft Certified Systems Engineer), Microsoft Certified Solutions Expert, CCNA (Cisco, USA), Citrix Administration (Citrix, USA), and Azure Administrator Associate.</p>
-            <p><strong>Global Presence:</strong> Residing in Frankfurt, Germany for over 23 years as a Senior IT-Infrastructure Engineer, Cloud Consultant, and Writer.</p>
-            <p><strong>Working Scope:</strong> Germany, Sweden, Belgium, Austria and remote assignments spanning more than 40 countries.</p>
+            <h3 data-en="Faiz Ahmed Bhagett — Background & Career" data-ur="فیض احمد بھگٹ — پس منظر اور کیریئر">فیض احمد بھگٹ — پس منظر اور کیریئر</h3>
+            <p><strong data-en="Roots:" data-ur="آبائی تعلق:">آبائی تعلق:</strong> <span data-en="Son of Mian Muhammad Siddique (Late Imam Mosque, Main Mosque Village Jajja-Oor)." data-ur="صاحبزادہ میاں محمد صدیق (مرحوم امام مسجد، مرکزی مسجد گاؤں ججّہ عور)۔">صاحبزادہ میاں محمد صدیق (مرحوم امام مسجد، مرکزی مسجد گاؤں ججّہ عور)۔</span></p>
+            <p><strong data-en="Education:" data-ur="تعلیم:">تعلیم:</strong> <span data-en="ICS (1997) from Govt. Model Degree College for Boys, Lahore; BCS (1998–2000) from Premier College of Information Technology, Lahore." data-ur="آئی سی ایس (1997) گورنمنٹ ماڈل ڈگری کالج لاہور؛ بی سی ایس (1998-2000) پریمئر کالج آف انفارمیشن ٹیکنالوجی لاہور۔">آئی سی ایس (1997) گورنمنٹ ماڈل ڈگری کالج لاہور؛ بی سی ایس (1998-2000) پریمئر کالج آف انفارمیشن ٹیکنالوجی لاہور۔</span></p>
+            <p><strong data-en="Professional Certifications:" data-ur="پرافیشنل سرٹیفیکیشنز:">پرافیشنل سرٹیفیکیشنز:</strong> MCP, MCSA, MCSE, CCNA (USA), Citrix Administration, and Azure Administrator Associate.</p>
+            <p><strong data-en="Global Presence:" data-ur="عالمی موجودگی:">عالمی موجودگی:</strong> <span data-en="Residing in Frankfurt, Germany for over 23 years as a Senior IT-Infrastructure Engineer, Cloud Consultant, and Writer." data-ur="پچھلے 23 سالوں سے فرینکفرٹ، جرمنی میں بطور سینئر آئی ٹی انفراسٹرکچر انجینئر، کلاؤڈ کنسلٹنٹ اور مصنف مقیم ہیں۔">پچھلے 23 سالوں سے فرینکفرٹ، جرمنی میں بطور سینئر آئی ٹی انفراسٹرکچر انجینئر، کلاؤڈ کنسلٹنٹ اور مصنف مقیم ہیں۔</span></p>
+            <p><strong data-en="Working Scope:" data-ur="کام کا دائرہ کار:">کام کا دائرہ کار:</strong> Germany, Sweden, Belgium, Austria and remote assignments spanning more than 40 countries.</p>
         </article>
         <article class="lux-card">
-            <h3>Official Ventures & Global Scope</h3>
-            <p><strong>Apex Infra Consulting:</strong> Enterprise IT infrastructure and cloud consulting services, Germany. Visit official website: <a href="https://www.apex-infra-consulting.com" target="_blank" style="color:var(--gold2);text-decoration:underline;">www.apex-infra-consulting.com</a></p>
-            <p><strong>Euroasia Manpower:</strong> Global manpower solutions and international recruitment, Germany. Visit official website: <a href="https://www.euroasia-manpower.eu" target="_blank" style="color:var(--gold2);text-decoration:underline;">www.Euroasia-manpower.eu</a></p>
-            <p><strong>Key Enterprise Clients & Collaborations:</strong> Apex Infra (Germany), Euroasia (Germany), Deutsche Bank (Germany), Kone GmbH (Germany), HDI Versicherung (Germany), Aareon GmbH (Germany), Jotic GmbH (Germany), and Johnson & Johnson (Belgium and Germany).</p>
+            <h3 data-en="Official Ventures & Global Scope" data-ur="سرکاری ادارے اور عالمی دائرہ کار">سرکاری ادارے اور عالمی دائرہ کار</h3>
+            <p><strong data-en="Apex Infra Consulting:" data-ur="ایپیکس انفرا کنسلٹنگ:">ایپیکس انفرا کنسلٹنگ:</strong> Enterprise IT infrastructure and cloud consulting services, Germany. Visit: <a href="https://www.apex-infra-consulting.com" target="_blank" style="color:var(--gold2);text-decoration:underline;">www.apex-infra-consulting.com</a></p>
+            <p><strong data-en="Euroasia Manpower:" data-ur="یوروشیا مین پاور:">یوروشیا مین پاور:</strong> Global manpower solutions and international recruitment, Germany. Visit: <a href="https://www.euroasia-manpower.eu" target="_blank" style="color:var(--gold2);text-decoration:underline;">www.Euroasia-manpower.eu</a></p>
+            <p><strong data-en="Key Enterprise Clients & Collaborations:" data-ur="اہم کلائنٹس اور ادارے:">اہم کلائنٹس اور ادارے:</strong> Apex Infra, Euroasia, Deutsche Bank, Kone GmbH, HDI Versicherung, Aareon GmbH, Jotic GmbH, and Johnson & Johnson.</p>
             <div class="tags">
                 <span class="tag">Apex Infra</span>
                 <span class="tag">Euroasia</span>
@@ -525,9 +562,9 @@ function toggleMenu() {
 <!-- PROFESSIONAL VIDEOS SECTION -->
 <section class="media" id="videos">
     <div class="section-head">
-        <div class="kicker">Cinematic Showcase</div>
-        <h2>Professional Videos</h2>
-        <p>Apex Infra Consulting and Euroasia Manpower presentations.</p>
+        <div class="kicker" data-en="Cinematic Showcase" data-ur="سنیماٹک ویڈیوز">سنیماٹک ویڈیوز</div>
+        <h2 data-en="Professional Videos" data-ur="پرافیشنل ویڈیوز">پرافیشنل ویڈیوز</h2>
+        <p data-en="Apex Infra Consulting and Euroasia Manpower presentations." data-ur="ایپیکس انفرا اور یوروشیا مین پاور کی پیشکشیں۔">ایپیکس انفرا اور یوروشیا مین پاور کی پیشکشیں۔</p>
     </div>
 
     <div class="video-grid">
@@ -558,7 +595,7 @@ function toggleMenu() {
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-title">Generated Cinematic View</div>
+            <div class="video-title" data-en="Generated Cinematic View" data-ur="سنیماٹک ویو">سنیماٹک ویو</div>
         </div>
     </div>
 </section>
@@ -566,83 +603,83 @@ function toggleMenu() {
 <!-- PROFESSIONAL GALLERY SECTION -->
 <section class="gallery" id="gallery">
     <div class="section-head">
-        <div class="kicker">Portfolio</div>
-        <h2>Professional Gallery</h2>
-        <p>Workplace snapshots, enterprise environments, and global operations.</p>
+        <div class="kicker" data-en="Portfolio" data-ur="پورٹ فولیو">پورٹ فولیو</div>
+        <h2 data-en="Professional Gallery" data-ur="پرافیشنل گیلری">پرافیشنل گیلری</h2>
+        <p data-en="Workplace snapshots, enterprise environments, and global operations." data-ur="دفتری مناظر اور عالمی آپریشنز کی تصاویر۔">دفتری مناظر اور عالمی آپریشنز کی تصاویر۔</p>
     </div>
 
     <div class="gallery-grid">
         <div class="gallery-card">
             <img src="bhagett3.png" alt="" class="gallery-img">
             <div class="gallery-info">
-                <h3>Infrastructure Work</h3>
-                <p>Server room & networking setup</p>
+                <h3 data-en="Infrastructure Work" data-ur="انفراسٹرکچر کا کام">انفراسٹرکچر کا کام</h3>
+                <p data-en="Server room & networking setup" data-ur="سرور روم اور نیٹ ورکنگ سیٹ اپ">سرور روم اور نیٹ ورکنگ سیٹ اپ</p>
             </div>
         </div>
 
         <div class="gallery-card">
             <img src="bhagett4.png" alt="" class="gallery-img">
             <div class="gallery-info">
-                <h3>Global Operations</h3>
-                <p>Presentations & technical deployment</p>
+                <h3 data-en="Global Operations" data-ur="عالمی آپریشنز">عالمی آپریشنز</h3>
+                <p data-en="Presentations & technical deployment" data-ur="پریزنٹیشنز اور ٹیکنیکل ڈپلائمنٹ">پریزنٹیشنز اور ٹیکنیکل ڈپلائمنٹ</p>
             </div>
         </div>
 
         <div class="gallery-card">
             <img src="faiz8.jpg" alt="" class="gallery-img">
             <div class="gallery-info">
-                <h3>Team & Gatherings</h3>
-                <p>Collaborative meetings and events</p>
+                <h3 data-en="Team & Gatherings" data-ur="ٹیم اور ملاقاتیں">ٹیم اور ملاقاتیں</h3>
+                <p data-en="Collaborative meetings and events" data-ur="اشتراکی میٹنگز اور ایونٹس">اشتراکی میٹنگز اور ایونٹس</p>
             </div>
         </div>
 
         <div class="gallery-card">
             <img src="faiz67.jpg" alt="" class="gallery-img">
             <div class="gallery-info">
-                <h3>Office Workspace</h3>
-                <p>Profile routine</p>
+                <h3 data-en="Office Workspace" data-ur="آفس ورک اسپیس">آفس ورک اسپیس</h3>
+                <p data-en="Profile routine" data-ur="روزمرہ دفتری کام">روزمرہ دفتری کام</p>
             </div>
         </div>
 
         <div class="gallery-card">
             <img src="faiz89.jpg" alt="" class="gallery-img">
             <div class="gallery-info">
-                <h3>Workspace View</h3>
-                <p>Consulting setup</p>
+                <h3 data-en="Workspace View" data-ur="ورک اسپیس ویو">ورک اسپیس ویو</h3>
+                <p data-en="Consulting setup" data-ur="کنسلٹنگ سیٹ اپ">کنسلٹنگ سیٹ اپ</p>
             </div>
         </div>
 
         <div class="gallery-card">
             <img src="faizth.png" alt="" class="gallery-img">
             <div class="gallery-info">
-                <h3>Server Deployment</h3>
-                <p>Rack installation work</p>
+                <h3 data-en="Server Deployment" data-ur="سرور ڈپلائمنٹ">سرور ڈپلائمنٹ</h3>
+                <p data-en="Rack installation work" data-ur="ریک انسٹالیشن کا کام">ریک انسٹالیشن کا کام</p>
             </div>
         </div>
 
         <div class="gallery-card">
             <img src="faizu.jpg" alt="" class="gallery-img">
             <div class="gallery-info">
-                <h3>Corporate Presence</h3>
-                <p>Professional snapshot</p>
+                <h3 data-en="Corporate Presence" data-ur="کارپوریٹ موجودگی">کارپوریٹ موجودگی</h3>
+                <p data-en="Professional snapshot" data-ur="پرافیشنل تصویر">پرافیشنل تصویر</p>
             </div>
         </div>
 
         <div class="gallery-card">
             <img src="faizy.jpg" alt="" class="gallery-img">
             <div class="gallery-info">
-                <h3>Exhibition & Display</h3>
-                <p>Global event presentation</p>
+                <h3 data-en="Exhibition & Display" data-ur="نمائش اور ڈسپلے">نمائش اور ڈسپلے</h3>
+                <p data-en="Global event presentation" data-ur="گلوبل ایونٹ پریزنٹیشن">گلوبل ایونٹ پریزنٹیشن</p>
             </div>
         </div>
     </div>
 </section>
 
 <footer>
-    <h3>Jajja Oor Community Portal & Writer Profile</h3>
-    <p>Faiz Ahmed Bhagett — Oestrich-Winkel / Frankfurt, Germany</p>
-    <p>Phone / WhatsApp: +49 172 1885722 | Email: Bhagett@yahoo.de</p>
-    <p class="copyright">&copy; 2026 Jajja Oor Village Archive & Creator Portal. All Rights Reserved.</p>
+    <h3 data-en="Jajja Oor Community Portal & Writer Profile" data-ur="ججّہ عور کمیونٹی پورٹل اور مصنف پروفাইল">ججّہ عور کمیونٹی پورٹل اور مصنف پروفাইল</h3>
+    <p>فیض احمد بھگٹ — اویسٹرش-ونکل / فرینکفرٹ، جرمنی</p>
+    <p>فون / واٹس ایپ: +49 172 1885722 | ای میل: Bhagett@yahoo.de</p>
+    <p class="copyright">&copy; 2026 ججّہ عور گاؤں آرکائیو اور کریئیٹر پورٹل۔ جملہ حقوق محفوظ ہیں۔</p>
 </footer>
 
 </body>
