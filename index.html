@@ -142,15 +142,7 @@ a{color:inherit;text-decoration:none}
 }
 .video-grid{max-width:1150px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px}
 .video-wrap{padding:9px;border-radius:28px;background:linear-gradient(135deg,rgba(255,224,154,.9),rgba(255,224,154,.10),rgba(255,224,154,.7));box-shadow:0 20px 60px rgba(0,0,0,.55)}
-.video-inner{border-radius:20px;overflow:hidden;background:#000;max-height:450px;display:flex;align-items:center;justify-content:center}
-.video-inner video{width:100%;max-height:450px;object-fit:contain;display:block}
-.video-title{text-align:center;color:#ffe09a;font-family:Cinzel,serif;font-size:.95rem;margin-top:12px}
-
-/* Specific styling for vertical TikTok/Mobile video to reduce side black space */
-.vertical-video-wrap {
-  max-width: 420px !important;
-  margin: 0 auto;
-}
+.video-inner{border-radius:20px;overflow:hidden;background:#000}.video-inner video{width:100%;height:auto;display:block}.video-title{text-align:center;color:#ffe09a;font-family:Cinzel,serif;font-size:.95rem;margin-top:12px}
 
 /* GALLERY */
 .gallery{
@@ -422,7 +414,7 @@ footer h3{font-family:Cinzel,serif;color:#ffe09a;font-size:1.4rem}footer .name{f
             <div class="video-title">Aerial Drone View - Jajja Oor Village Layout & Surroundings</div>
         </div>
 
-        <div class="video-wrap vertical-video-wrap">
+        <div style="max-width:850px; margin:0 auto;" class="video-wrap">
             <div class="video-inner">
                 <video controls preload="metadata">
                     <source src="Jajjaoor.mp4" type="video/mp4">
@@ -480,6 +472,23 @@ function toggleMenu() {
         <h2>Writer & IT Consultant Section</h2>
         <p>Detailed professional background, global IT career, publishing works, and official company links by Faiz Ahmed Bhagett.</p>
     </div>
+    
+    <!-- SPECIAL WRITER HIGHLIGHT CARD WITH ATTACHED PHOTO -->
+    <div style="max-width:900px; margin:0 auto 40px auto; background:linear-gradient(145deg, rgba(18,59,43,0.9), rgba(7,24,16,0.95)); border:2px solid #ffe09a; border-radius:28px; padding:40px; box-shadow:0 30px 80px rgba(0,0,0,0.6); display:flex; flex-direction:column; align-items:center; text-align:center;">
+        <div style="width:140px; height:140px; border-radius:50%; border:3px solid #ffe09a; overflow:hidden; margin-bottom:20px; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
+            <img src="Passport .png" alt="Faiz Ahmed Bhagett" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <h3 style="font-family:Cinzel,serif; color:#ffe09a; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:12px; text-shadow:0 2px 10px #000; background:linear-gradient(135deg, #ffe39a, #c99535); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">
+            The Pioneer of Modern Technology in Jajja Oor
+        </h3>
+        <p style="color:#f1f3ec; font-size:1.05rem; line-height:1.9; max-width:750px; margin-bottom:15px; text-shadow:0 1px 8px #000;">
+            Faiz Ahmed Bhagett holds the historic distinction of being <strong>the first IT-Engineer in Jajja Oor's history for the last 60 years</strong>. Bridging rural roots with global technological excellence, his groundbreaking journey spans decades of dedication, innovation, and leadership across international borders.
+        </p>
+        <div style="display:inline-block; padding:8px 20px; background:rgba(255,224,154,0.15); border:1px solid rgba(255,224,154,0.4); border-radius:30px; color:#ffe09a; font-size:0.8rem; letter-spacing:1.5px; text-transform:uppercase; font-weight:600;">
+            ✦ Writer, Author & Senior IT Infrastructure Consultant ✦
+        </div>
+    </div>
+
     <div class="grid-2" style="margin-bottom:50px;">
         <article class="lux-card">
             <h3>Faiz Ahmed Bhagett — Background & Career</h3>
@@ -585,7 +594,7 @@ function toggleMenu() {
             <img src="faiz67.jpg" alt="" class="gallery-img">
             <div class="gallery-info">
                 <h3>Office Workspace</h3>
-                <p>Daily professional routine</p>
+                <p>Profile routine</p>
             </div>
         </div>
 
